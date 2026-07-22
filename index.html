@@ -1435,7 +1435,8 @@ const PRODUCTS = [
       azul:   "images/choclas-azul.png",
       verde:  "images/choclas-verde.png"
     },
-    specs: ["Tela piqué","Confeccionada","1 logo al frente","Diseños varios / propios"]
+    specs: ["Tela piqué","Confeccionada","1 logo al frente","Diseños varios / propios"],
+    applications: ["Honda","Yamaha","Kawasaki","KTM","Suzuki"]
   },
   {
     id: "chomba-racing", category: "indumentaria",
@@ -1449,28 +1450,30 @@ const PRODUCTS = [
       azul:   "images/chorac-azul.png",
       verde:  "images/chorac-verde.png"
     },
-    specs: ["Tela piqué","Confeccionada","2 logos al frente","1 logo en cada manga","1 logo en la espalda"]
+    specs: ["Tela piqué","Confeccionada","2 logos al frente","1 logo en cada manga","1 logo en la espalda"],
+    applications: ["Honda","Yamaha","Kawasaki","KTM","Suzuki"]
   },
   {
     id: "campera-algodon", category: "indumentaria",
     name: "Campera Algodón", price: 38000, image: "images/campalgo.png",
     desc: "Confeccionada en algodón con doble frisa, un tejido de alto gramaje que ofrece máximo abrigo y una suavidad excepcional en ambas caras. Retiene el calor de forma eficiente y resiste el uso diario y los lavados continuos.",
     sizes: ["S","M","L","XL","XXL"],
-    colors: ["negro","blanco","rojo","azul","verde"],
+    colors: ["negro","blanco","rojo","azul",],
     images: {
       negro:  "images/campalgo-negro.png",
       blanco: "images/campalgo-blanco.png",
       rojo:   "images/campalgo-rojo.png",
       azul:   "images/campalgo-azul.png",
-      verde:  "images/campalgo-verde.png"
+      
     },
-    specs: ["Algodón peinado","Doble frizado","Con capucha","Confeccionada"]
+    specs: ["Algodón peinado","Doble frizado","Con capucha","Confeccionada"],
+    applications: ["Honda","Yamaha","Kawasaki","KTM","Ducati"]
   },
   {
     id: "campera-softshell", category: "indumentaria",
     name: "Campera SoftShell", price: 50000, image: "images/campsoftshel.png",
     sizes: ["M","L","XL","XXL"],
-    colors: ["negro","blanco","rojo","azul","verde"],
+    
     images: {
       negro:  "images/campsoftshel-negro.png",
       blanco: "images/campsoftshel-blanco.png",
@@ -1478,7 +1481,8 @@ const PRODUCTS = [
       azul:   "images/campsoftshel-azul.png",
       verde:  "images/campsoftshel-verde.png"
     },
-    specs: ["Cierre impermeable","Capucha desmontable"]
+    specs: ["Cierre impermeable","Capucha desmontable"],
+    applications: ["Honda","Yamaha","Kawasaki","KTM","Alpinestar"]
   },
   {
     id: "remeras", category: "indumentaria",
@@ -1493,19 +1497,22 @@ const PRODUCTS = [
       azul:   "images/remealgo-azul.png",
       verde:  "images/remealgo-verde.png"
     },
-    specs: ["Algodón peinado","Diseños de distintas marcas: Honda, KTM, Kawasaki, Yamaha y más"]
+    specs: ["Algodón peinado","Diseños de distintas marcas: Honda, KTM, Kawasaki, Yamaha y más"],
+    applications: ["Honda","Yamaha","Kawasaki","KTM","Suzuki"]
   },
 
   // ---------- ACCESORIOS DE VIAJE ----------
   {
     id: "muslera", category: "viaje",
     name: "Muslera 3 Bolsillos", price: 12000, image: "images/Musle.png",
-    specs: ["3 compartimientos","Cordura reforzada","Materiales duraderos","Diseños de distintas marcas"]
+    specs: ["3 compartimientos","Cordura reforzada","Materiales duraderos","Diseños de distintas marcas"],
+    applications: ["Honda","Yamaha","Kawasaki","KTM","Suzuki","BMW","Rouser","Gilera","Corven"]
   },
   {
     id: "mochila-cordura", category: "viaje",
     name: "Mochila Cordura Reforzada", price: 15000, image: "images/mochicor.png",
-    specs: ["Cordura reforzada","Diseños: Colapinto, HRC, YHM, SZK, KTM, KWS, ProTPR, RSR"]
+    specs: ["Cordura reforzada","Diseños: Colapinto, HRC, YHM, SZK, KTM, KWS, ProTPR, RSR"],
+    applications: ["Honda","Yamaha","Kawasaki","KTM","Suzuki","Franco Colapinto"]
   },
   {
     id: "cubremanos", category: "viaje",
@@ -1522,17 +1529,20 @@ const PRODUCTS = [
   {
     id: "cuellos-elastisados", category: "cuellos",
     name: "Cuellos Elastisados", price: 4000, image: "images/Cuelasti.jpg",
-    specs: ["Elastisado","Diseños de marcas y pilotos: KTM, HRC, Yamaha, Suzuki y más"]
+    specs: ["Elastisado","Diseños de marcas y pilotos: KTM, HRC, Yamaha, Suzuki y más"],
+    applications: ["Honda","Yamaha","Kawasaki","KTM","Suzuki","BMW","Rouser","Gilera","Corven"]
   },
   {
     id: "cuello-multiuso", category: "cuellos",
     name: "Cuello Multiuso", price: 4000, image: "images/cuellomulti.png",
-    specs: ["Elastisado"]
+    specs: ["Elastisado"],
+    applications: ["Protaper","Alpinestar","Honda","Fox","Yamaha","Bajaj","Yamaha 46","KTM","Kawasaki","Suzuki"]
   },
   {
     id: "balaclava", category: "cuellos",
     name: "Balaclava", price: 4250, image: "images/balaclava.jpg",
-    specs: ["Laycra","Elastisada","Varios modelos"]
+    specs: ["Laycra","Elastisada","Varios modelos"],
+    applications: ["Honda","Yamaha","Kawasaki","KTM","Suzuki","BMW","Rouser","Gilera","Corven"]
   },
 
   // ---------- PERSONALIZACIÓN Y OTROS ----------
@@ -1659,9 +1669,13 @@ function productCardHtml(p){
        </select>`
     : "";
 
+  const isFundas = p.category === "fundas";
+  const appPlaceholder = isFundas ? "Elegí tu moto" : "Elegí tu marca";
+  const appAriaLabel = isFundas ? "Elegir aplicación (modelo de moto)" : "Elegir marca";
+
   const appSelectHtml = hasApps
-    ? `<select class="app-select" aria-label="Elegir aplicación (modelo de moto)">
-         <option value="">Elegí tu moto</option>
+    ? `<select class="app-select" aria-label="${appAriaLabel}">
+         <option value="">${appPlaceholder}</option>
          ${p.applications.map(a => `<option value="${a}">${a}</option>`).join("")}
        </select>`
     : "";
@@ -1784,7 +1798,7 @@ function initCardInteractions(){
         return;
       }
       if(appSelect && !app){
-        flashAdded(e.target, "Elegí tu moto");
+        flashAdded(e.target, p.category === "fundas" ? "Elegí tu moto" : "Elegí tu marca");
         appSelect.focus();
         return;
       }
